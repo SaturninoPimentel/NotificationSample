@@ -1,0 +1,26 @@
+﻿<Page x:Class="NotificationSample.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Models="using:NotificationSample.Models"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:NotificationSample"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <Models:Person x:Key="Person" />
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+    </Page.Resources>
+
+    <StackPanel DataContext="{StaticResource Person}">
+        <TextBlock Text="{Binding Id, Mode=OneTime}" />
+        <TextBlock Text="Mensaje:" />
+        <TextBox Text="{Binding Message, Mode=OneWay}" />
+        <TextBlock Text="Nombre(s):" />
+        <TextBox Text="{Binding Name, Mode=TwoWay}" />
+        <TextBlock Text="Apellido:" />
+        <TextBox Text="{Binding LastName, Mode=TwoWay}" />
+    </StackPanel>
+</Page>
