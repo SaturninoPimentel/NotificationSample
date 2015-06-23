@@ -1,4 +1,4 @@
-# NotificationSample
+# MVVM IV Sistema de notificación de cambios
 Como hemos visto en los post anteriores XAML tiene la capacidad de comprender expresiones de [**atado de datos**](https://saturninopimentel.com/mvvm-ii-trabajando-con-atado-de-datos/) y [**la vista**](https://saturninopimentel.com/mvvm-iii-la-vista/) juega un papel primordial en la interacción con el usuario, pues bien por lo general esa interacción entre el usuario y nuestra aplicación produce cambios en la información que contiene nuestra aplicación, estos cambios ya sea por procesos de nuestra  aplicación o por datos proporcionados por los usuario son manejados por medio de un sistema de notificación de cambios que permite a los componentes mantener el estado de la información actualizado según convenga.
 
 La notificación de cambios es muy sencilla pero de igual manera importante, XAML permite tres tipos de comunicación una de ellas es **OneWay** que le permitirá a las propiedades informar a la vista de los cambios pero la propiedad no recibe información de los cambios que sufra en la vista.
